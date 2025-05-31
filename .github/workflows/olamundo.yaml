@@ -1,0 +1,17 @@
+name: ola. mundo!
+
+on: [push]
+
+jobs:
+  ola-mundo:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+
+      - name: Run ola mundo script
+        run: |
+          echo "Ola, mundo!"
+          echo "This is a simple GitHub Actions workflow."
+          echo "It runs on every push to the repository."
